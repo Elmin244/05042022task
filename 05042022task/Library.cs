@@ -7,10 +7,11 @@ namespace _05042022task
     internal class Library
     {
         public List<Book> Books = new List<Book>();
-        public List<Book> FilterByPrice(double minPrice,double maxPrice)
+        public List<Book> FilterByPrice(double MinPrice,double MaxPrice)
         {
             List<Book>newBook=Books.FindAll(book=> book.Price > minPrice && book.Price < maxPrice);
             return newBook;
+           
         }
         public List<Book> FilterByGenre(Genre genre)
         {
